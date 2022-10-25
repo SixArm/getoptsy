@@ -1,7 +1,11 @@
 #!/bin/sh
 
-# Unix shell script POSIX args-opts like getops.
-# See the help section below for full information.
+# getoptsy: getopts alternative
+#
+# This "getoptsy" Unix shell script is demonstration of how to parse command
+# line arguments to long options, by using a while loop and pure POSIX code.
+# The source code is commented in detail, to help developers learn faster.
+# See the help section below for more information, or run "./demo --help".
 
 # Set Unix shell script flags that catch some errors.
 # set -e: error returns are errors, so exit
@@ -20,19 +24,20 @@ set -euf
 #
 help(){
 cat << EOF
-Unix shell script POSIX args-opts like getops
+getoptsy: getopts alternative
 
-This script demonstrates how to parse command line arguments into options,
-using all POSIX standard shell script code, without needed POSIX getopts.
-The source code is commented step-by-step, to help you learn the code.
+This "getoptsy" Unix shell script is demonstration of how to parse command
+line arguments to long options, by using a while loop and pure POSIX code.
 
-This source code shows how you can process arguments to options such as:
+The source code and detailed comments show how to process these options:
 
   * Long options, such as "--help" for help, "--verbose" for verbose, etc.
 
   * Short options, such as "-h" for help, "-v" for verbose, etc.
 
-  * Short options as runs, such as "-hv" for help and verbose.
+  * Short options as runs, such as "-vvv" for verbose level 3.
+
+  * Value options such as "--foo=bar", "--foo bar", "-f bar", etc.
 
 We welcome constructive feedback and ideas for improvements.
 
