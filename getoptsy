@@ -39,6 +39,15 @@ The source code and detailed comments show how to process these options:
 
   * Value options such as "--foo=bar", "--foo bar", "-f bar", etc.
 
+
+## About this demonstration
+
+This demonstration aims to show how you can write your own code.
+
+This demonstration does not aim to provide a drop-in replacement for 
+getopts, or its specification, or its way of describing options, etc.;
+if you want that, then we can suggest "getopts_long", linked below.
+
 We welcome constructive feedback and ideas for improvements.
 
 
