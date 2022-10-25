@@ -1,4 +1,4 @@
-# getoptsy: getopts alternative
+# getoptsy: getopts alternative for long options
 
 This `getoptsy` Unix shell script is demonstration of how to parse command
 line arguments to long options, by using a while loop and pure POSIX code.
@@ -30,7 +30,7 @@ We welcome constructive feedback and ideas for improvements.
 Syntax:
 
 ```sh
-demo [options] [arguments]
+getoptsy [options] [arguments]
 ```
 
 Options:
@@ -45,13 +45,13 @@ Options:
 Examples:
 
 ```sh
-demo.sh --help 
+getoptsy --help 
 #=> Print this help
 
-demo.sh -vvv 
+getoptsy -vvv 
 #=> Increment the verbose three times
 
-demo.sh --foo bar 
+getoptsy --foo bar 
 #=> Set foo to bar
 ```
 
@@ -104,7 +104,7 @@ options, or uses complex logic, or involves work of high value to you.
 We advocate for the POSIX standard group members to consider a future POSIX
 release that upgrades the getopts tool by adding support for long options.
 
-A new getops with long options will supersede this demo script's approach.
+A new getops with long options will supersede the "getoptsy" script.
 It will help many shell scripts, and many users, and many developers,
 by providing a standard built-in way to parse arguments into options.
 
