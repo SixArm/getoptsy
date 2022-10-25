@@ -1,17 +1,17 @@
 # getoptsy: getopts alternative
 
-This "getoptsy" Unix shell script is demonstration of how to parse command
+This `getoptsy` Unix shell script is demonstration of how to parse command
 line arguments to long options, by using a while loop and pure POSIX code.
 
 The source code and detailed comments show how to process these options:
 
-  * Long options, such as "--help" for help, "--verbose" for verbose, etc.
+  * Long options, such as `--help` for help, `--verbose` for verbose, etc.
 
-  * Short options, such as "-h" for help, "-v" for verbose, etc.
+  * Short options, such as `-h` for help, `-v` for verbose, etc.
 
-  * Short options as runs, such as "-hv" for help and verbose.
+  * Short options as runs, such as `-hv` for help and verbose.
 
-  * Value options such as "--foo=bar", "--foo bar", "-f bar", etc.
+  * Value options such as `--foo=bar`, `--foo bar`, `-f bar`, etc.
 
 We welcome constructive feedback and ideas for improvements.
 
@@ -62,16 +62,16 @@ Comparisons to other command line arguments options parsing:
 This script aims to work with the POSIX standard, because this tends
 improves portability and compatibility with a wide range of systems.
 
-The POSIX standard provides a tool to get options, named "getopts".
-This supports for one-character "short options", such as "-h" for help,
-and does not support multi-character "long options", such as "--help".
+The POSIX standard provides a tool to get options, named `getopts`.
+This supports for one-character "short options", such as `-h` for help,
+and does not support multi-character "long options", such as `--help`.
 
 We know that some developers strongly favor runs of short options,
-such as "-abc" which is intended to be equivalent to "-a -b -c".
+such as `-abc` which is intended to be equivalent to `-a -b -c`.
 
 We believe that long options tend to help people learn and use scripts.
-For example some of our daily tools now offer an option "--dry-run",
-and some of our administration tools now offer an option "--danger"
+For example some of our daily tools now offer an option `--dry-run`,
+and some of our administration tools now offer an option `--danger`
 to help caution the user to take more care about the command usage.
 
 We believe the best approach will use POSIX compatibilty, short options,

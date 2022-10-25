@@ -57,11 +57,14 @@ Options:
 
 Examples:
 
-    demo.sh --help => Print this help
+    demo.sh --help 
+    #=> Print this help
 
-    demo.sh -vvv => Increment the verbose three times
+    demo.sh -vvv 
+    #=> Increment the verbose three times
 
-    demo.sh --foo bar => Set foo to bar
+    demo.sh --foo bar 
+    #=> Set foo to bar
 
 
 ## Comparisons
