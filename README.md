@@ -1,7 +1,7 @@
-# getoptsy: getopts alternative for long options
+# getoptsy: getopts alternative to parse long options in POSIX
 
-This `getoptsy` Unix shell script is demonstration of how to parse command
-line arguments to long options, by using a while loop and pure POSIX code.
+This "getoptsy" Unix shell script is demonstration of how to parse command
+line arguments to long options, by using while...case, all in POSIX code.
 
 The source code and detailed comments show how to process these options:
 
