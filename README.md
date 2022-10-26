@@ -112,7 +112,7 @@ by providing a standard built-in way to parse arguments into options.
 ## Tracking
 
 * Package: unix-shell-script-posix-args-opts-like-getops
-* Version: 1.0.0
+* Version: 1.0.1
 * Created: 2022-10-23T10:25:48Z
 * Updated: 2022-10-25T18:54:19Z
 * License: GPL-2.0-or-later or contact us for custom

@@ -188,13 +188,12 @@ while [ $# -gt 0 ]; do
 
             # Is the work in progress is a run of short options?
             -[[:alnum:]][[:alnum:]]*)
-                # Take the first option and save it to `opt`.
-                # This variable gets processed by the next `case`.
-                # Example: when arg is "-abc" then opt becomes "-a".
-                opt=$(printf %s "$wip" | cut -c 1-2)
-                # Take the remainder of the run of short options.
-                # Example: when arg is "-abc" then wip becomes "-bc".
-                wip="-"$(printf %s "$wip" | cut -c 3-)
+                # Set `opt` to the first option, and `wip` to the rest.
+                # Example: when input is `-abc`, then output `opt` as `-a`,
+                # and `wip` as `-bc` which is ready forthe next iteration.
+                tmp=${wip#-?}
+                opt=${wip%"$tmp"}
+                wip="-$tmp"
                 ;;
 
             # Is the work in progress anything else?
@@ -258,6 +257,7 @@ done
 # Conclude the options parsing by cleaning up all variables we don't need.
 opt=
 wip=
+tmp=
 
 # Because this is example code, we print the results.
 # Be sure you delete this section from your real code.
