@@ -9,7 +9,7 @@ The source code and detailed comments show how to process these options:
 
   * Short options, such as `-h` for help, `-v` for verbose, etc.
 
-  * Short options as runs, such as `-hv` for help and verbose.
+  * Short options as runs, such as "-vvv" for verbose level 3.
 
   * Value options such as `--foo=bar`, `--foo bar`, `-f bar`, etc.
 
